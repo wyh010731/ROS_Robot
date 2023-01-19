@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=AIN2 Pin=U4-27
+Removed Pin From Net: NetName=AIN1 Pin=U4-28
+Added Pin To Net: NetName=AIN1 Pin=U4-27
+Added Pin To Net: NetName=AIN2 Pin=U4-28
+Added Room: Name=main

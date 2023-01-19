@@ -1,0 +1,11 @@
+Removed Member From Class: ClassName=main Member=*1
+Added Component: Designator=OLED(OLED-IIC-096)
+Add component (AddParameter): Name = "BOM名称"; Value = "4P接插件"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "封装库来自淘宝卖家ID:黄晶宝石"; Value = "其他店铺购入均为盗版假冒封装库，请立即申请退款，本店现金奖励20~200元"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "联系卖家，免费查找封装"; Value = "唯一出售店铺网址https://shop463601444.taobao.com"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3.3V Pin=OLED-1
+Added Pin To Net: NetName=GND Pin=OLED-2
+Added Pin To Net: NetName=I2C_SCL_OLED Pin=OLED-3
+Added Pin To Net: NetName=I2C_SDA_OLED Pin=OLED-4
+Added Member To Class: ClassName=main Member=Component OLED HDR-1X4
+Added Room: Name=main

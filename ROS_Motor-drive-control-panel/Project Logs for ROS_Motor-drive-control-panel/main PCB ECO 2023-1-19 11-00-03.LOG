@@ -1,0 +1,10 @@
+Added Component: Designator=舵机(HDR2.54-LI-3P)
+Add component (AddParameter): Name = "BOM名称"; Value = "3P接插件"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "封装库来自淘宝卖家ID:黄晶宝石"; Value = "其他店铺购入均为盗版假冒封装库，请立即申请退款，本店现金奖励20~200元"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "联系卖家，免费查找封装"; Value = "唯一出售店铺网址https://shop463601444.taobao.com"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5 Pin=舵机-2
+Added Pin To Net: NetName=GND Pin=舵机-3
+Added Pin To Net: NetName=TIM4_CH3 Pin=U4-45
+Added Pin To Net: NetName=TIM4_CH3 Pin=舵机-1
+Added Net: Name=TIM4_CH3
+Added Member To Class: ClassName=main Member=Component 舵机 HDR-1X3

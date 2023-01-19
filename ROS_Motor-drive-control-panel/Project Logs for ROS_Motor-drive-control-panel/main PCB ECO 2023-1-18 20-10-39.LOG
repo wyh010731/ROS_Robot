@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=SWCLK Pin=SYS1-2
+Removed Pin From Net: NetName=SWDIO Pin=SYS1-3
+Change Component Footprint: Designator=C21 Old Footprint=C0603_L New Footprint=C0805_L
+Change Component Footprint: Designator=C22 Old Footprint=C0603_L New Footprint=C0805_L
+Added Pin To Net: NetName=SWDIO Pin=SYS1-2
+Added Pin To Net: NetName=SWCLK Pin=SYS1-3
+Added Room: Name=main

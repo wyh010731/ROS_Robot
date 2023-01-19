@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=I2C_SCL_OLED Pin=U4-39
+Removed Pin From Net: NetName=I2C_SDA_OLED Pin=U4-40
+Added Pin To Net: NetName=I2C_SDA_OLED Pin=U4-39
+Added Pin To Net: NetName=I2C_SCL_OLED Pin=U4-40
+Added Room: Name=main
