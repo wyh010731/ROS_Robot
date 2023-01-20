@@ -101,16 +101,21 @@ Discarded input sections
  .data          0x00000000        0x0 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
  .bss           0x00000000        0x0 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
  .text.Motor_init
-                0x00000000        0x2 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
- .debug_info    0x00000000       0x85 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
- .debug_abbrev  0x00000000       0x42 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
+                0x00000000       0x50 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
+ .text.Motor_speed
+                0x00000000       0x10 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
+ .text.Motor_direction
+                0x00000000       0xbc CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
+ .debug_info    0x00000000      0x999 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
+ .debug_abbrev  0x00000000      0x1ca CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
+ .debug_loc     0x00000000       0x25 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
  .debug_aranges
-                0x00000000       0x20 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
- .debug_ranges  0x00000000       0x10 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
- .debug_line    0x00000000       0x5f CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
- .debug_str     0x00000000      0x1be CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
+                0x00000000       0x30 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
+ .debug_ranges  0x00000000       0x20 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
+ .debug_line    0x00000000      0x2af CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
+ .debug_str     0x00000000      0x741 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
  .comment       0x00000000       0x4a CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
- .debug_frame   0x00000000       0x20 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
+ .debug_frame   0x00000000       0x50 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
  .ARM.attributes
                 0x00000000       0x2d CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
  .text          0x00000000        0x0 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Servo.c.obj
