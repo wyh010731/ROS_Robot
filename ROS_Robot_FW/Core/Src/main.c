@@ -101,6 +101,7 @@ int main(void)
     printf("初始化\r\n");
 
     Servo_init();   //舵机初始化
+    Motor_init();   //电机初始化
 
     OLED_Init();    //初始化OLED屏幕
     OLED_ColorTurn(0);
