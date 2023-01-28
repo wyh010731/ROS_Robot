@@ -47,10 +47,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\Tool\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\Tool\JetBrains\CLion 2022.1.3\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\Tool\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "D:\Tool\JetBrains\CLion 2022.1.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = D:\ROS\ROS_Robot\ROS_Robot_FW\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\Tool\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"D:\Tool\JetBrains\CLion 2022.1.3\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\Tool\JetBrains\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\Tool\JetBrains\CLion 2022.1.3\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -151,6 +151,30 @@ Core/BSP/Key.s: Core/BSP/Key.c.s
 Core/BSP/Key.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ROS_Robot.elf.dir\build.make CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Key.c.s
 .PHONY : Core/BSP/Key.c.s
+
+Core/BSP/MY_usart.obj: Core/BSP/MY_usart.c.obj
+.PHONY : Core/BSP/MY_usart.obj
+
+# target to build an object file
+Core/BSP/MY_usart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ROS_Robot.elf.dir\build.make CMakeFiles/ROS_Robot.elf.dir/Core/BSP/MY_usart.c.obj
+.PHONY : Core/BSP/MY_usart.c.obj
+
+Core/BSP/MY_usart.i: Core/BSP/MY_usart.c.i
+.PHONY : Core/BSP/MY_usart.i
+
+# target to preprocess a source file
+Core/BSP/MY_usart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ROS_Robot.elf.dir\build.make CMakeFiles/ROS_Robot.elf.dir/Core/BSP/MY_usart.c.i
+.PHONY : Core/BSP/MY_usart.c.i
+
+Core/BSP/MY_usart.s: Core/BSP/MY_usart.c.s
+.PHONY : Core/BSP/MY_usart.s
+
+# target to generate assembly for a file
+Core/BSP/MY_usart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ROS_Robot.elf.dir\build.make CMakeFiles/ROS_Robot.elf.dir/Core/BSP/MY_usart.c.s
+.PHONY : Core/BSP/MY_usart.c.s
 
 Core/BSP/Motor.obj: Core/BSP/Motor.c.obj
 .PHONY : Core/BSP/Motor.obj
@@ -844,6 +868,9 @@ help:
 	@echo ... Core/BSP/Key.obj
 	@echo ... Core/BSP/Key.i
 	@echo ... Core/BSP/Key.s
+	@echo ... Core/BSP/MY_usart.obj
+	@echo ... Core/BSP/MY_usart.i
+	@echo ... Core/BSP/MY_usart.s
 	@echo ... Core/BSP/Motor.obj
 	@echo ... Core/BSP/Motor.i
 	@echo ... Core/BSP/Motor.s

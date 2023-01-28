@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Key.c.obj"
   "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Key.c.obj.d"
+  "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/MY_usart.c.obj"
+  "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/MY_usart.c.obj.d"
   "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj"
   "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj.d"
   "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Servo.c.obj"

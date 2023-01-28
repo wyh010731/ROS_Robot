@@ -124,7 +124,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
+      Motor_speed(500,500);
+      Motor_direction(1);
+      Motor_direction(3);
       HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
       HAL_Delay(500);
     /* USER CODE END WHILE */

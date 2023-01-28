@@ -41,6 +41,9 @@ CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Key.c.obj: D:/ROS/ROS_Robot/ROS_Robot_FW/C
   D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Inc/gpio.h \
   D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Inc/main.h
 
+CMakeFiles/ROS_Robot.elf.dir/Core/BSP/MY_usart.c.obj: D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/MY_usart.c \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/MY_usart.h
+
 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj: D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Motor.c \
   D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Motor.h \
   D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Inc/gpio.h \
@@ -1164,6 +1167,8 @@ D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc
 
 D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Inc/tim.h:
 
+D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/MY_usart.c:
+
 D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h:
 
 D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/stdint.h:
@@ -1231,6 +1236,8 @@ D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/s
 D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 
 D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
+
+D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/MY_usart.h:
 
 D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Motor.c:
 

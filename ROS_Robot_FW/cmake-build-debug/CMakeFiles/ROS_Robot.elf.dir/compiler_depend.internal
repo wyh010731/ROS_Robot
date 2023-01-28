@@ -42,6 +42,10 @@ CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Key.c.obj
  D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Inc/gpio.h
  D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Inc/main.h
 
+CMakeFiles/ROS_Robot.elf.dir/Core/BSP/MY_usart.c.obj
+ D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/MY_usart.c
+ D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/MY_usart.h
+
 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj
  D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Motor.c
  D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Motor.h
