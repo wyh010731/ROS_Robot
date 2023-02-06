@@ -1,0 +1,29 @@
+Change Component Footprint: Designator=C7 Old Footprint=C0805_L New Footprint=C0603_L
+Added Component: Designator=C28(C0603_L)
+Add component (AddParameter): Name = "BOM名称"; Value = "无极性贴片电容"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "联系卖家，免费查找封装"; Value = "唯一出售店铺网址https://shop463601444.taobao.com"; VariantName = "[No Variations]"
+Added Component: Designator=U7(SOIC-8)
+Added Component: Designator=USBC3(USB-C-SMD_16P)
+Add component (AddParameter): Name = "联系卖家 免费技术支持"; Value = "封装库来自淘宝卖家ID：黄晶宝石"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C28-1
+Added Pin To Net: NetName=+5 Pin=C28-2
+Added Pin To Net: NetName=USBD+ Pin=U7-1
+Added Pin To Net: NetName=USBD- Pin=U7-2
+Added Pin To Net: NetName=GND Pin=U7-3
+Added Pin To Net: NetName=+5 Pin=U7-5
+Added Pin To Net: NetName=USART1_RX Pin=U7-6
+Added Pin To Net: NetName=USART1_TX Pin=U7-7
+Added Pin To Net: NetName=+3.3V Pin=U7-8
+Added Pin To Net: NetName=GND Pin=USBC3-A1
+Added Pin To Net: NetName=+5 Pin=USBC3-A4
+Added Pin To Net: NetName=USBD+ Pin=USBC3-A6
+Added Pin To Net: NetName=USBD- Pin=USBC3-A7
+Added Pin To Net: NetName=+5 Pin=USBC3-A9
+Added Pin To Net: NetName=GND Pin=USBC3-A12
+Added Pin To Net: NetName=+5 Pin=USBC3-B4
+Added Pin To Net: NetName=USBD+ Pin=USBC3-B6
+Added Pin To Net: NetName=USBD- Pin=USBC3-B7
+Added Pin To Net: NetName=+5 Pin=USBC3-B9
+Added Member To Class: ClassName=main Member=Component C28 104
+Added Member To Class: ClassName=main Member=Component U7 CH340N
+Added Member To Class: ClassName=main Member=Component USBC3 TYPE-C 2.0 -16P
