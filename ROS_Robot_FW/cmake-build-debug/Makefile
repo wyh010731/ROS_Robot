@@ -128,6 +128,30 @@ ROS_Robot.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ROS_Robot.elf.dir\build.make CMakeFiles/ROS_Robot.elf.dir/build
 .PHONY : ROS_Robot.elf/fast
 
+Core/BSP/Encoder.obj: Core/BSP/Encoder.c.obj
+.PHONY : Core/BSP/Encoder.obj
+
+# target to build an object file
+Core/BSP/Encoder.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ROS_Robot.elf.dir\build.make CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Encoder.c.obj
+.PHONY : Core/BSP/Encoder.c.obj
+
+Core/BSP/Encoder.i: Core/BSP/Encoder.c.i
+.PHONY : Core/BSP/Encoder.i
+
+# target to preprocess a source file
+Core/BSP/Encoder.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ROS_Robot.elf.dir\build.make CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Encoder.c.i
+.PHONY : Core/BSP/Encoder.c.i
+
+Core/BSP/Encoder.s: Core/BSP/Encoder.c.s
+.PHONY : Core/BSP/Encoder.s
+
+# target to generate assembly for a file
+Core/BSP/Encoder.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ROS_Robot.elf.dir\build.make CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Encoder.c.s
+.PHONY : Core/BSP/Encoder.c.s
+
 Core/BSP/Key.obj: Core/BSP/Key.c.obj
 .PHONY : Core/BSP/Key.obj
 
@@ -865,6 +889,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... ROS_Robot.elf
+	@echo ... Core/BSP/Encoder.obj
+	@echo ... Core/BSP/Encoder.i
+	@echo ... Core/BSP/Encoder.s
 	@echo ... Core/BSP/Key.obj
 	@echo ... Core/BSP/Key.i
 	@echo ... Core/BSP/Key.s

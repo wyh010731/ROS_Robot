@@ -29,6 +29,7 @@
 #include "Servo.h"
 #include "oled.h"
 #include "Motor.h"
+#include "Encoder.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -102,7 +103,9 @@ int main(void)
 
     Servo_init();   //舵机初始化
     Motor_init();   //电机初始化
+    Encoder_init(); //编码器初始化
 
+    uint8_t data=0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -111,7 +114,9 @@ int main(void)
   {
       Motor_speed(500,500);
       Motor_direction(1);
-
+      data=Encoder_Get_Data();
+      printf("data=%s",&data);
+      HAL_Delay(500);
 
 
     /* USER CODE END WHILE */

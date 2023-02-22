@@ -66,4 +66,5 @@ CMakeFiles/ROS_Robot.elf.dir/Core/Src/main.c.obj: \
  d:\tool\gcc-arm-none-eabi\gcc-arm-none-eabi-10.3-2021.07\arm-none-eabi\include\sys\stdio.h \
  D:\ROS\ROS_Robot\ROS_Robot_FW\Core\BSP/Servo.h \
  D:\ROS\ROS_Robot\ROS_Robot_FW\Core\BSP/oled.h \
- D:\ROS\ROS_Robot\ROS_Robot_FW\Core\BSP/Motor.h
+ D:\ROS\ROS_Robot\ROS_Robot_FW\Core\BSP/Motor.h \
+ D:\ROS\ROS_Robot\ROS_Robot_FW\Core\BSP/Encoder.h

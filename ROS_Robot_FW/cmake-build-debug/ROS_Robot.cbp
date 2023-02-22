@@ -98,6 +98,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Encoder.c">
+			<Option target="ROS_Robot.elf"/>
+		</Unit>
+		<Unit filename="D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Encoder.h">
+			<Option target="ROS_Robot.elf"/>
+		</Unit>
 		<Unit filename="D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Key.c">
 			<Option target="ROS_Robot.elf"/>
 		</Unit>

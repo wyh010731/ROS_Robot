@@ -27,11 +27,11 @@ void Motor_speed(uint8_t PWM_A,uint8_t PWM_B) //设定PWM频率
 void Motor_direction(uint8_t direction)
 {
     switch (direction) {
-        case 1:
+        case 1://正转
             HAL_GPIO_WritePin(GPIOB,GPIO_PIN_13,GPIO_PIN_SET);   //IN1
             HAL_GPIO_WritePin(GPIOB,GPIO_PIN_12,GPIO_PIN_RESET); //IN2
             break;
-        case 2:
+        case 2://反转
             HAL_GPIO_WritePin(GPIOB,GPIO_PIN_12,GPIO_PIN_RESET); //IN1
             HAL_GPIO_WritePin(GPIOB,GPIO_PIN_13,GPIO_PIN_SET);   //IN2
             break;
