@@ -11,7 +11,7 @@
 #include "stdio.h"
 
 void Motor_init();
-void Motor_speed(uint8_t PWM_A,uint8_t PWM_B);
+void Motor_speed(uint32_t PWM_A,uint32_t PWM_B);
 void Motor_direction(uint8_t direction);
 
 #endif //ROS_ROBOT_MOTOR_H

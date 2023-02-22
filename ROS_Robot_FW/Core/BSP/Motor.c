@@ -18,7 +18,7 @@ void Motor_init() //电机初始化
     printf("Motor init OK!\n");
 }
 
-void Motor_speed(uint8_t PWM_A,uint8_t PWM_B) //设定PWM频率
+void Motor_speed(uint32_t PWM_A,uint32_t PWM_B) //设定PWM频率
 {
     __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,PWM_A);
     __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,PWM_B);
