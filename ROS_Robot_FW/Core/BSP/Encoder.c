@@ -4,7 +4,10 @@
 
 #include "Encoder.h"
 
-uint8_t Get_data=0;
+struct Encoder{
+    int Get_data;
+    int Direction;
+}encoder;
 
 void Encoder_init()
 {
@@ -14,7 +17,9 @@ void Encoder_init()
 
 uint8_t Encoder_Get_Data()
 {
-    Get_data = __HAL_TIM_GET_COUNTER(&htim2);
-    printf("Encoder Data:%s",&Get_data);
-    return Get_data;
+    encoder.Direction = __HAL_TIM_IS_TIM_COUNTING_DOWN(&htim2);
+    encoder.Get_data = __HAL_TIM_GET_COUNTER(&htim2);
+    __HAL_TIM_GET_COUNTER(&htim2) = 0;
+    //printf("Encoder Data:%s",&Get_data);
+    return encoder.Get_data;
 }
