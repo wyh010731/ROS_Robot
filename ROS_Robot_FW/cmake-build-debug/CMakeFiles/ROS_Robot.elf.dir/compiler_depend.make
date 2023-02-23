@@ -278,6 +278,77 @@ CMakeFiles/ROS_Robot.elf.dir/Core/BSP/oled.c.obj: D:/ROS/ROS_Robot/ROS_Robot_FW/
   D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Inc/main.h \
   D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/oledfont.h
 
+CMakeFiles/ROS_Robot.elf.dir/Core/BSP/retarget.c.obj: D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/retarget.c \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/_ansi.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/newlib.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/_newlib_version.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/config.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/machine/ieeefp.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/features.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/_syslist.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/errno.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/errno.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/reent.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/_types.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/machine/_types.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/machine/_default_types.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/lock.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/time.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/cdefs.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/_timeval.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/types.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/_stdint.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/machine/endian.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/machine/_endian.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/select.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/_sigset.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/timespec.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/_timespec.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/_pthreadtypes.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/sched.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/machine/types.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/time.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/_ansi.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/machine/time.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/_locale.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/machine/_time.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/times.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/retarget.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Inc/stm32f1xx_hal_conf.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/CMSIS/Include/core_cm3.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/stdint.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/_intsup.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/CMSIS/Include/cmsis_version.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/CMSIS/Include/cmsis_compiler.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/CMSIS/Include/cmsis_gcc.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/stat.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/stdio.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/stdio.h
+
 CMakeFiles/ROS_Robot.elf.dir/Core/Src/gpio.c.obj: D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Src/gpio.c \
   D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Inc/gpio.h \
   D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Inc/main.h \
@@ -422,7 +493,12 @@ CMakeFiles/ROS_Robot.elf.dir/Core/Src/main.c.obj: D:/ROS/ROS_Robot/ROS_Robot_FW/
   D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Servo.h \
   D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/oled.h \
   D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Motor.h \
-  D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Encoder.h
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Encoder.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/retarget.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/stat.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/time.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/machine/time.h \
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/_locale.h
 
 CMakeFiles/ROS_Robot.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Src/stm32f1xx_hal_msp.c \
   D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Inc/main.h \
@@ -1369,6 +1445,32 @@ D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/oled.h:
 
 D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/oledfont.h:
 
+D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/retarget.c:
+
+D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/_syslist.h:
+
+D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/signal.h:
+
+D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/errno.h:
+
+D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/errno.h:
+
+D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/time.h:
+
+D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/time.h:
+
+D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/machine/time.h:
+
+D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/_locale.h:
+
+D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/machine/_time.h:
+
+D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/times.h:
+
+D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/retarget.h:
+
+D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/stat.h:
+
 D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Src/i2c.c:
 
 D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Inc/i2c.h:
@@ -1385,31 +1487,11 @@ D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Inc/stm32f1xx_it.h:
 
 D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Src/syscalls.c:
 
-D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/stat.h:
-
-D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/time.h:
-
-D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/machine/time.h:
-
-D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/_locale.h:
-
 D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/machine/stdlib.h:
 
 D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/alloca.h:
 
-D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/signal.h:
-
-D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/errno.h:
-
-D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/errno.h:
-
 D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/signal.h:
-
-D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/time.h:
-
-D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/machine/_time.h:
-
-D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/times.h:
 
 D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Src/sysmem.c:
 

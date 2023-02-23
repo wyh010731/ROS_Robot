@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Servo.c.obj.d"
   "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/oled.c.obj"
   "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/oled.c.obj.d"
+  "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/retarget.c.obj"
+  "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/retarget.c.obj.d"
   "CMakeFiles/ROS_Robot.elf.dir/Core/Src/gpio.c.obj"
   "CMakeFiles/ROS_Robot.elf.dir/Core/Src/gpio.c.obj.d"
   "CMakeFiles/ROS_Robot.elf.dir/Core/Src/i2c.c.obj"

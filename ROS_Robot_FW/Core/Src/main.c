@@ -30,6 +30,7 @@
 #include "oled.h"
 #include "Motor.h"
 #include "Encoder.h"
+#include "retarget.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -99,6 +100,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+    RetargetInit(&huart1);
     printf("初始化\r\n");
 
     Servo_init();   //舵机初始化
@@ -166,11 +168,7 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-int fputc(int ch, FILE *f)
-{
-    HAL_UART_Transmit(&huart1,(uint8_t *)&ch, 1, 100);
-    return (ch);
-}
+
 /* USER CODE END 4 */
 
 /**

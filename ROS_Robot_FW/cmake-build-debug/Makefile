@@ -272,6 +272,30 @@ Core/BSP/oled.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ROS_Robot.elf.dir\build.make CMakeFiles/ROS_Robot.elf.dir/Core/BSP/oled.c.s
 .PHONY : Core/BSP/oled.c.s
 
+Core/BSP/retarget.obj: Core/BSP/retarget.c.obj
+.PHONY : Core/BSP/retarget.obj
+
+# target to build an object file
+Core/BSP/retarget.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ROS_Robot.elf.dir\build.make CMakeFiles/ROS_Robot.elf.dir/Core/BSP/retarget.c.obj
+.PHONY : Core/BSP/retarget.c.obj
+
+Core/BSP/retarget.i: Core/BSP/retarget.c.i
+.PHONY : Core/BSP/retarget.i
+
+# target to preprocess a source file
+Core/BSP/retarget.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ROS_Robot.elf.dir\build.make CMakeFiles/ROS_Robot.elf.dir/Core/BSP/retarget.c.i
+.PHONY : Core/BSP/retarget.c.i
+
+Core/BSP/retarget.s: Core/BSP/retarget.c.s
+.PHONY : Core/BSP/retarget.s
+
+# target to generate assembly for a file
+Core/BSP/retarget.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ROS_Robot.elf.dir\build.make CMakeFiles/ROS_Robot.elf.dir/Core/BSP/retarget.c.s
+.PHONY : Core/BSP/retarget.c.s
+
 Core/Src/gpio.obj: Core/Src/gpio.c.obj
 .PHONY : Core/Src/gpio.obj
 
@@ -907,6 +931,9 @@ help:
 	@echo ... Core/BSP/oled.obj
 	@echo ... Core/BSP/oled.i
 	@echo ... Core/BSP/oled.s
+	@echo ... Core/BSP/retarget.obj
+	@echo ... Core/BSP/retarget.i
+	@echo ... Core/BSP/retarget.s
 	@echo ... Core/Src/gpio.obj
 	@echo ... Core/Src/gpio.i
 	@echo ... Core/Src/gpio.s
