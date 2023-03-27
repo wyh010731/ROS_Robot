@@ -106,6 +106,8 @@ int main(void)
     Servo_init();   //舵机初始化
     Motor_init();   //电机初始化
     Encoder_init(); //编码器初始化
+    OLED_Init();
+    OLED_ColorTurn(0);//OLED初始化
 
     int data=0;
   /* USER CODE END 2 */
