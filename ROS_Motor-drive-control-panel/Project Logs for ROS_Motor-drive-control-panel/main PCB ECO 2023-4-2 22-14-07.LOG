@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=+12_VIN Pin=1-1
+Removed Pin From Net: NetName=+12_VIN Pin=S1-2
+Added Pin To Net: NetName=+12_VIN Pin=S1-1
+Change Net Name : Old Net Name=+12_VIN New Net Name=+12VCC
+Added Pin To Net: NetName=+12_VIN Pin=1-1
+Added Pin To Net: NetName=+12_VIN Pin=JP1-1
+Added Pin To Net: NetName=+12_VIN Pin=S1-2
+Added Net: Name=+12_VIN
+Added Room: Name=main

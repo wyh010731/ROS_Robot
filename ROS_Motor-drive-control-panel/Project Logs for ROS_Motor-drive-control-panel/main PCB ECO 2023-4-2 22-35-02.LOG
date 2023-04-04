@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=USART2_RX Pin=JP2-3
+Added Pin To Net: NetName=USART2_TX Pin=JP2-4
+Added Room: Name=main
