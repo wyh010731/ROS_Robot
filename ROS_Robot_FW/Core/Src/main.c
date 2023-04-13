@@ -26,12 +26,11 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "stdio.h"
-#include "Servo.h"
-#include "oled.h"
-#include "Motor.h"
-#include "Encoder.h"
-#include "retarget.h"
-#include "MY_main.h"
+#include "../BSP/retarget.h"
+#include "../BSP/Servo.h"
+#include "../BSP/Motor.h"
+#include "../BSP/Encoder.h"
+#include "../BSP/oled.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
