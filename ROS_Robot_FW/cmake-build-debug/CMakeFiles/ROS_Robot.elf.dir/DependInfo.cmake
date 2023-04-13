@@ -33,7 +33,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Encoder.c" "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Encoder.c.obj" "gcc" "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Encoder.c.obj.d"
   "D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Key.c" "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Key.c.obj" "gcc" "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Key.c.obj.d"
-  "D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/MY_usart.c" "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/MY_usart.c.obj" "gcc" "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/MY_usart.c.obj.d"
+  "D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/MY_main.c" "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/MY_main.c.obj" "gcc" "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/MY_main.c.obj.d"
   "D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Motor.c" "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj" "gcc" "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj.d"
   "D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Servo.c" "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Servo.c.obj" "gcc" "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Servo.c.obj.d"
   "D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/oled.c" "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/oled.c.obj" "gcc" "CMakeFiles/ROS_Robot.elf.dir/Core/BSP/oled.c.obj.d"

@@ -110,10 +110,10 @@
 		<Unit filename="D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Key.h">
 			<Option target="ROS_Robot.elf"/>
 		</Unit>
-		<Unit filename="D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/MY_usart.c">
+		<Unit filename="D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/MY_main.c">
 			<Option target="ROS_Robot.elf"/>
 		</Unit>
-		<Unit filename="D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/MY_usart.h">
+		<Unit filename="D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/MY_main.h">
 			<Option target="ROS_Robot.elf"/>
 		</Unit>
 		<Unit filename="D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Motor.c">

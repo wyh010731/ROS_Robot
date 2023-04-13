@@ -31,6 +31,7 @@
 #include "Motor.h"
 #include "Encoder.h"
 #include "retarget.h"
+#include "MY_main.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
