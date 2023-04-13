@@ -72,4 +72,9 @@ CMakeFiles/ROS_Robot.elf.dir/Core/Src/main.c.obj: \
  d:\ros\ros_robot\ros_robot_fw\core\bsp\servo.h \
  d:\ros\ros_robot\ros_robot_fw\core\bsp\motor.h \
  d:\ros\ros_robot\ros_robot_fw\core\bsp\encoder.h \
- d:\ros\ros_robot\ros_robot_fw\core\bsp\oled.h
+ d:\ros\ros_robot\ros_robot_fw\core\bsp\oled.h \
+ d:\ros\ros_robot\ros_robot_fw\core\bsp\my_main.h \
+ d:\ros\ros_robot\ros_robot_fw\core\bsp\oled.h \
+ d:\tool\gcc-arm-none-eabi\gcc-arm-none-eabi-10.3-2021.07\arm-none-eabi\include\string.h \
+ d:\tool\gcc-arm-none-eabi\gcc-arm-none-eabi-10.3-2021.07\arm-none-eabi\include\strings.h \
+ d:\tool\gcc-arm-none-eabi\gcc-arm-none-eabi-10.3-2021.07\arm-none-eabi\include\sys\string.h

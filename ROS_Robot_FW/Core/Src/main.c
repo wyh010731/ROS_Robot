@@ -31,6 +31,7 @@
 #include "../BSP/Motor.h"
 #include "../BSP/Encoder.h"
 #include "../BSP/oled.h"
+#include "../BSP/MY_main.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -108,20 +109,14 @@ int main(void)
     Encoder_init(); //编码器初始化
     OLED_Init();
     OLED_ColorTurn(0);//OLED初始化
-
-    int data=0;
+    OLED_ShowString(15,0,(uint8_t *)"Autopilot System",12,1);
+    OLED_Refresh();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-      Motor_speed(500,500);
-      Motor_direction(1);
-      data = Encoder_Get_Data();
-      printf("data=%d\r\n",&data);
-      HAL_Delay(10);
-
 
     /* USER CODE END WHILE */
 
