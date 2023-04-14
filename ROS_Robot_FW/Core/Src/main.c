@@ -45,7 +45,7 @@
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-
+extern uint8_t rx_index , rx_buffer[];
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -103,13 +103,19 @@ int main(void)
   /* USER CODE BEGIN 2 */
     RetargetInit(&huart1);
     printf("初始化\r\n");
-
-    Servo_init();   //舵机初始化
-    Motor_init();   //电机初始化
-    Encoder_init(); //编码器初始化
+    /*舵机初始化*/
+    Servo_init();
+    /*舵电机初始化*/
+    Motor_init();
+    /*编码器初始化*/
+    Encoder_init();
+    HAL_UART_Receive_IT(&huart2, &rx_buffer[rx_index], 1);
+    /*OLED初始化*/
     OLED_Init();
-    OLED_ColorTurn(0);//OLED初始化
+    OLED_ColorTurn(0);
+    /*显示字符串 "Autopilot System"*/
     OLED_ShowString(15,0,(uint8_t *)"Autopilot System",12,1);
+    /*OLED屏幕刷新*/
     OLED_Refresh();
   /* USER CODE END 2 */
 
