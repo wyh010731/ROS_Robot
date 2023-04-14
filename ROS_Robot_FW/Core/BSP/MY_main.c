@@ -22,7 +22,10 @@ void my_main()
     else{
         Motor_speed(linear_velocity,linear_velocity);
         Motor_direction(1);
-        Servo_angle(2);
+        /*计算舵机转向角度*/
+        int new_servo_angle = calculate_servo_angle(angular_velocity);
+        /*设定舵机转向角度*/
+        set_servo_angle(new_servo_angle);
     }
 }
 
