@@ -11,6 +11,7 @@
 #include "stdint.h"
 
 void Servo_init();
-void Servo_angle(uint8_t angle);
-
+void set_servo_angle(uint16_t angle);
+int calculate_servo_angle(int angular_velocity);
+int constrain(int value, int min_value, int max_value);
 #endif //ROS_ROBOT_SERVO_H
