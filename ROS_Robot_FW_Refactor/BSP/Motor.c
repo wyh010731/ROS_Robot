@@ -62,4 +62,5 @@ void Motor_direction(uint8_t direction)
             HAL_GPIO_WritePin(GPIOB,GPIO_PIN_13,GPIO_PIN_SET);
             break;
     }
+
 }

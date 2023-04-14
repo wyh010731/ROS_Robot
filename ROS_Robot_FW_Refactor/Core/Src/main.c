@@ -71,7 +71,7 @@ uint8_t linear_velocity = 0 , angular_velocity = 0 , lidar_distance = 0;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-
+void my_main(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -136,6 +136,15 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+		Motor_speed(200,200);
+		Motor_direction(1);
+		// 获取电机1的转速
+    Get_Motor1_Speed();
+
+    // 获取电机2的转速
+    Get_Motor2_Speed();
+
+		HAL_Delay(500);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -224,12 +233,12 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
                 printf("Received cmd_vel: v_l=%d, v_r=%d\r\n", v_l, v_r);
                 /* OLED字符显示 */
                 OLED_ShowString(0,16,(uint8_t *)"linear_velocity:",12,1);
-                OLED_ShowString(0,32,(uint8_t *)"angular_velocity:",12,1);
-                OLED_ShowString(0,48,(uint8_t *)"lidar_distance:",12,1);
+                //OLED_ShowString(0,32,(uint8_t *)"angular_velocity:",12,1);
+                OLED_ShowString(0,32,(uint8_t *)"lidar_distance:",12,1);
                 /* OLED数据显示 */
                 OLED_ShowNum(100,16,v_l,3,12,1);
-                OLED_ShowNum(100,32,v_r,3,12,1);
-                OLED_ShowNum(100,48,lidar_value,3,12,1);
+                //OLED_ShowNum(100,32,v_r,3,12,1);
+                OLED_ShowNum(100,32,lidar_value,3,12,1);
                 /* OLED屏幕刷新 */
                 OLED_Refresh();
                 /* 清空接收缓冲区和帧头标志位 */
@@ -272,7 +281,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 /* printf重映像 */
 int fputc(int ch, FILE *f)
 {
-	HAL_UART_Transmit(&huart1,(uint8_t *)&ch, 1, 100);
+	HAL_UART_Transmit(&huart2,(uint8_t *)&ch, 1, 100);
 	return (ch);
 }
 /* USER CODE END 4 */
