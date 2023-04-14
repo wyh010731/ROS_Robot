@@ -173,7 +173,10 @@ CMakeFiles/ROS_Robot.elf.dir/Core/BSP/MY_main.c.obj: D:/ROS/ROS_Robot/ROS_Robot_
   D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/_pthreadtypes.h \
   D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/sched.h \
   D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/machine/types.h \
-  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/stdio.h
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/stdio.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Motor.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Inc/tim.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Servo.h
 
 CMakeFiles/ROS_Robot.elf.dir/Core/BSP/Motor.c.obj: D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Motor.c \
   D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Motor.h \
@@ -570,7 +573,9 @@ CMakeFiles/ROS_Robot.elf.dir/Core/Src/main.c.obj: D:/ROS/ROS_Robot/ROS_Robot_FW/
   D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/oled.h \
   D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/string.h \
   D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/strings.h \
-  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/string.h
+  D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/string.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Motor.h \
+  D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Servo.h
 
 CMakeFiles/ROS_Robot.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Src/stm32f1xx_hal_msp.c \
   D:/ROS/ROS_Robot/ROS_Robot_FW/Core/Inc/main.h \
@@ -1517,11 +1522,11 @@ D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/s
 
 D:/Tool/gcc-arm-none-eabi/gcc-arm-none-eabi-10.3-2021.07/arm-none-eabi/include/sys/string.h:
 
-D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Motor.c:
-
 D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Motor.h:
 
 D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Servo.h:
+
+D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/Motor.c:
 
 D:/ROS/ROS_Robot/ROS_Robot_FW/Core/BSP/oled.c:
 
