@@ -33,3 +33,9 @@ ros_robot\main.o: ../Core/Inc/i2c.h
 ros_robot\main.o: ../Core/Inc/tim.h
 ros_robot\main.o: ../Core/Inc/usart.h
 ros_robot\main.o: ../Core/Inc/gpio.h
+ros_robot\main.o: D:\Tool\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+ros_robot\main.o: D:\Tool\MDK\ARM\ARMCC\Bin\..\include\string.h
+ros_robot\main.o: ..\BSP\../BSP/Servo.h
+ros_robot\main.o: ..\BSP\../BSP/Motor.h
+ros_robot\main.o: ..\BSP\../BSP/Encoder.h
+ros_robot\main.o: ..\BSP\../BSP/oled.h

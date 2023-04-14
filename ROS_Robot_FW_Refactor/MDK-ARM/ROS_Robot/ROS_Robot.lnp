@@ -23,7 +23,12 @@
 "ros_robot\stm32f1xx_hal_tim_ex.o"
 "ros_robot\stm32f1xx_hal_uart.o"
 "ros_robot\system_stm32f1xx.o"
---strict --scatter "ROS_Robot\ROS_Robot.sct"
+"ros_robot\encoder.o"
+"ros_robot\key.o"
+"ros_robot\motor.o"
+"ros_robot\oled.o"
+"ros_robot\servo.o"
+--library_type=microlib --strict --scatter "ROS_Robot\ROS_Robot.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "ROS_Robot.map" -o ROS_Robot\ROS_Robot.axf
