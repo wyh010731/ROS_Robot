@@ -54,7 +54,7 @@ void Motor_direction(uint8_t direction)
             HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,GPIO_PIN_RESET); //IN3
             HAL_GPIO_WritePin(GPIOB,GPIO_PIN_15,GPIO_PIN_SET);   //IN4
             break;
-        case 3:
+        default:
             HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,GPIO_PIN_SET);
             HAL_GPIO_WritePin(GPIOB,GPIO_PIN_15,GPIO_PIN_SET);
 
