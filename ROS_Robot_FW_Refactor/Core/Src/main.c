@@ -64,7 +64,7 @@ uint8_t rx_index = 0;
 /* 定义变量表示是否接收到了帧头 */
 uint8_t frame_received = 0;
 /* 定义变量 */
-uint8_t linear_velocity = 0 , angular_velocity = 0 , lidar_distance = 0;
+int linear_velocity = 0 , angular_velocity = 0 , lidar_distance = 0 ;
 
 /* USER CODE END PV */
 
@@ -122,6 +122,7 @@ int main(void)
   Motor_init();
   /* 编码器初始化 */
   Encoder_init();
+
 	HAL_UART_Receive_IT(&huart2, &rx_buffer[rx_index], 1);
   /* OLED初始化 */
   OLED_Init();
@@ -130,21 +131,15 @@ int main(void)
   OLED_ShowString(15,0,(uint8_t *)"Autopilot System",12,1);
   /* OLED屏幕刷新 */
   OLED_Refresh();
+	uint8_t a = 0;
+	HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_3);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		Motor_speed(200,200);
-		Motor_direction(1);
-		// 获取电机1的转速
-    Get_Motor1_Speed();
-
-    // 获取电机2的转速
-    Get_Motor2_Speed();
-
-		HAL_Delay(500);
+		 
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -196,19 +191,18 @@ void SystemClock_Config(void)
 /* 自定义主函数 */
 void my_main()
 {
-    /* 判断激光雷达距离，障碍物距离小于等于20cm时车辆立即停止 */
-    if(lidar_distance <= 20){
-        Motor_speed(0,0);
-        Motor_direction(3);
-    }
-    else{
-        Motor_speed(linear_velocity,linear_velocity);
+	/* 判断激光雷达距离，障碍物距离小于等于20cm时车辆立即停止 */
+    if(lidar_distance > 20){
+        Motor_speed(200,200);
         Motor_direction(1);
-        /* 计算舵机转向角度 */
-        int new_servo_angle = calculate_servo_angle(angular_velocity);
-        /* 设定舵机转向角度 */
-        set_servo_angle(new_servo_angle);
+				//set_servo_angle(90);
     }
+		if(lidar_distance < 20){
+				Motor_speed(200,200);
+				Motor_direction(3);	
+				set_servo_angle_1();
+				HAL_Delay(100);
+		}
 }
 
 /* 串口回调函数解析数据 */
@@ -233,12 +227,12 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
                 printf("Received cmd_vel: v_l=%d, v_r=%d\r\n", v_l, v_r);
                 /* OLED字符显示 */
                 OLED_ShowString(0,16,(uint8_t *)"linear_velocity:",12,1);
-                //OLED_ShowString(0,32,(uint8_t *)"angular_velocity:",12,1);
-                OLED_ShowString(0,32,(uint8_t *)"lidar_distance:",12,1);
+//                OLED_ShowString(0,32,(uint8_t *)"angular_velocity:",12,1);
+                OLED_ShowString(0,48,(uint8_t *)"lidar_distance:",12,1);
                 /* OLED数据显示 */
                 OLED_ShowNum(100,16,v_l,3,12,1);
-                //OLED_ShowNum(100,32,v_r,3,12,1);
-                OLED_ShowNum(100,32,lidar_value,3,12,1);
+//                OLED_ShowNum(100,32,v_r,3,12,1);
+                OLED_ShowNum(100,48,lidar_value,3,12,1);
                 /* OLED屏幕刷新 */
                 OLED_Refresh();
                 /* 清空接收缓冲区和帧头标志位 */
