@@ -27,19 +27,14 @@ Project File Date:  04/16/2023
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Tool\MDK\ARM\ARMCC\Bin'
 Build target 'ROS_Robot'
-compiling Servo.c...
 compiling main.c...
 ../Core/Src/main.c(134): warning:  #177-D: variable "a"  was declared but never referenced
   	uint8_t a = 0;
-../Core/Src/main.c(203): warning:  #223-D: function "set_servo_angle_1" declared implicitly
-  				set_servo_angle_1();
-../Core/Src/main.c: 2 warnings, 0 errors
+../Core/Src/main.c: 1 warning, 0 errors
 linking...
-ROS_Robot\ROS_Robot.axf: Error: L6218E: Undefined symbol set_servo_angle_1 (referred from main.o).
-Not enough information to list image symbols.
-Not enough information to list load addresses in the image map.
-Finished: 2 information, 0 warning and 1 error messages.
-"ROS_Robot\ROS_Robot.axf" - 1 Error(s), 2 Warning(s).
+Program Size: Code=10492 RO-data=6372 RW-data=44 ZI-data=2716  
+FromELF: creating hex file...
+"ROS_Robot\ROS_Robot.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -62,7 +57,6 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.1.2
-Target not created.
 Build Time Elapsed:  00:00:01
 </pre>
 </body>

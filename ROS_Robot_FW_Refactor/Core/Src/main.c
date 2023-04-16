@@ -192,17 +192,25 @@ void SystemClock_Config(void)
 void my_main()
 {
 	/* 判断激光雷达距离，障碍物距离小于等于20cm时车辆立即停止 */
-    if(lidar_distance > 20){
-        Motor_speed(200,200);
-        Motor_direction(1);
-				//set_servo_angle(90);
-    }
-		if(lidar_distance < 20){
-				Motor_speed(200,200);
-				Motor_direction(3);	
-				set_servo_angle_1();
-				HAL_Delay(100);
-		}
+	if(lidar_distance <= 20){
+    /* 设定停止PWM脉冲为0 */
+		Motor_speed(0 , 0);
+    /* 停止电机转动 */
+		Motor_direction(3);
+	}
+  /* 判断激光雷达距离，障碍物距离大于20cm时车辆前进 */
+  else if (lidar_distance > 20)
+  {
+    /* 将串口解析出的v_l线速度传入电机 */
+    Motor_speed(linear_velocity , linear_velocity);
+    /* 使能电机正转 */
+    Motor_direction(1);
+    /* 定义变量new_angle读取计算角度值 */
+    int new_angle = calculate_servo_angle(angular_velocity);
+    /* 设定舵机角度 */
+    set_servo_angle(new_angle);
+    /* code */
+  }  
 }
 
 /* 串口回调函数解析数据 */
