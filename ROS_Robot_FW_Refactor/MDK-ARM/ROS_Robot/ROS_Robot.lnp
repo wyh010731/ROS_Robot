@@ -28,6 +28,7 @@
 "ros_robot\motor.o"
 "ros_robot\oled.o"
 "ros_robot\servo.o"
+"ros_robot\pid.o"
 --library_type=microlib --strict --scatter "ROS_Robot\ROS_Robot.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
