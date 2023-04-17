@@ -307,6 +307,8 @@
       "uploadConfigMap": {},
       "custom_dep": {
         "name": "default",
+        "sourceDirList": [],
+        "libList": [],
         "incList": [
           "../Core/Inc",
           "../Drivers/STM32F1xx_HAL_Driver/Inc",
@@ -314,12 +316,8 @@
           "../Drivers/CMSIS/Device/ST/STM32F1xx/Include",
           "../Drivers/CMSIS/Include",
           "../BSP",
-          ".cmsis/include",
-          "RTE/_ROS_Robot",
-          ".eide/deps"
+          "RTE/_ROS_Robot"
         ],
-        "libList": [],
-        "sourceDirList": [],
         "defineList": [
           "USE_HAL_DRIVER",
           "STM32F103xB"

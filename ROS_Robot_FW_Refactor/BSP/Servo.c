@@ -28,7 +28,8 @@ int calculate_servo_angle(int angular_velocity)
     int max_angular_velocity = 200; // 最大角速度
     int max_angle_diff = 45; // 最大角度差
     int angle_diff = max_angle_diff * angular_velocity / max_angular_velocity; // 计算角度差
-    int new_servo_angle = 90 + angle_diff; // 修改舵机角度
+//    int angle_diff = max_angle_diff - (max_angle_diff * angular_velocity / max_angular_velocity);
+    int new_servo_angle = 90 - angle_diff; // 修改舵机角度
     new_servo_angle = constrain(new_servo_angle, 0, 180); // 限制舵机角度在0-180度范围内
 
     return new_servo_angle;
