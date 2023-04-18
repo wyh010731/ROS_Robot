@@ -1,6 +1,11 @@
 Dependencies for Project 'ROS_Robot', Target 'ROS_Robot': (DO NOT MODIFY !)
+<<<<<<< Updated upstream
 F (startup_stm32f103xb.s)(0x643ACEF7)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_ROS_Robot-ID:\Tool\MDK\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\Tool\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include--pd "__UVISION_VERSION SETA 527" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list startup_stm32f103xb.lst --xref -o ros_robot\startup_stm32f103xb.o --depend ros_robot\startup_stm32f103xb.d)
 F (../Core/Src/main.c)(0x643D0F9F)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../BSP-I.\RTE\_ROS_Robot-ID:\Tool\MDK\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\Tool\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ros_robot\main.o --omf_browse ros_robot\main.crf --depend ros_robot\main.d)
+=======
+F (startup_stm32f103xb.s)(0x643EB446)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_ROS_Robot-ID:\Tool\MDK\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\Tool\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include--pd "__UVISION_VERSION SETA 527" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list startup_stm32f103xb.lst --xref -o ros_robot\startup_stm32f103xb.o --depend ros_robot\startup_stm32f103xb.d)
+F (../Core/Src/main.c)(0x643EBE45)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../BSP-I.\RTE\_ROS_Robot-ID:\Tool\MDK\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\Tool\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ros_robot\main.o --omf_browse ros_robot\main.crf --depend ros_robot\main.d)
+>>>>>>> Stashed changes
 I (../Core/Inc/main.h)(0x64391AC8)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x60E91804)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x643ACEF4)
@@ -38,7 +43,7 @@ I (D:\Tool\MDK\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (D:\Tool\MDK\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (../BSP/../BSP/Servo.h)(0x643B8A13)
 I (../BSP/../BSP/Motor.h)(0x64392120)
-I (../BSP/../BSP/Encoder.h)(0x643A21A6)
+I (../BSP/../BSP/Encoder.h)(0x643EBE45)
 I (../BSP/../BSP/oled.h)(0x63C92687)
 F (../Core/Src/gpio.c)(0x64391AC7)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../BSP-I.\RTE\_ROS_Robot-ID:\Tool\MDK\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\Tool\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ros_robot\gpio.o --omf_browse ros_robot\gpio.crf --depend ros_robot\gpio.d)
 I (../Core/Inc/gpio.h)(0x64391AC7)
@@ -102,7 +107,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x60E91804)
-F (../Core/Src/tim.c)(0x643A260D)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../BSP-I.\RTE\_ROS_Robot-ID:\Tool\MDK\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\Tool\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ros_robot\tim.o --omf_browse ros_robot\tim.crf --depend ros_robot\tim.d)
+F (../Core/Src/tim.c)(0x643EBE45)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../BSP-I.\RTE\_ROS_Robot-ID:\Tool\MDK\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\Tool\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ros_robot\tim.o --omf_browse ros_robot\tim.crf --depend ros_robot\tim.d)
 I (../Core/Inc/tim.h)(0x64391AC7)
 I (../Core/Inc/main.h)(0x64391AC8)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x60E91804)
@@ -133,7 +138,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x60E91804)
-F (../Core/Src/usart.c)(0x643A4F7E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../BSP-I.\RTE\_ROS_Robot-ID:\Tool\MDK\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\Tool\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ros_robot\usart.o --omf_browse ros_robot\usart.crf --depend ros_robot\usart.d)
+F (../Core/Src/usart.c)(0x643EBE45)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../BSP-I.\RTE\_ROS_Robot-ID:\Tool\MDK\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\Tool\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ros_robot\usart.o --omf_browse ros_robot\usart.crf --depend ros_robot\usart.d)
 I (../Core/Inc/usart.h)(0x64391AC8)
 I (../Core/Inc/main.h)(0x64391AC8)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x60E91804)
@@ -164,7 +169,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x60E91804)
-F (../Core/Src/stm32f1xx_it.c)(0x64391AC8)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../BSP-I.\RTE\_ROS_Robot-ID:\Tool\MDK\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\Tool\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ros_robot\stm32f1xx_it.o --omf_browse ros_robot\stm32f1xx_it.crf --depend ros_robot\stm32f1xx_it.d)
+F (../Core/Src/stm32f1xx_it.c)(0x643EBE45)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../BSP-I.\RTE\_ROS_Robot-ID:\Tool\MDK\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\Tool\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ros_robot\stm32f1xx_it.o --omf_browse ros_robot\stm32f1xx_it.crf --depend ros_robot\stm32f1xx_it.d)
 I (../Core/Inc/main.h)(0x64391AC8)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x60E91804)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x643ACEF4)
@@ -194,7 +199,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x60E91804)
-I (../Core/Inc/stm32f1xx_it.h)(0x64391AC8)
+I (../Core/Inc/stm32f1xx_it.h)(0x643EBE45)
 F (../Core/Src/stm32f1xx_hal_msp.c)(0x64391AC8)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../BSP-I.\RTE\_ROS_Robot-ID:\Tool\MDK\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\Tool\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ros_robot\stm32f1xx_hal_msp.o --omf_browse ros_robot\stm32f1xx_hal_msp.crf --depend ros_robot\stm32f1xx_hal_msp.d)
 I (../Core/Inc/main.h)(0x64391AC8)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x60E91804)
@@ -689,8 +694,8 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x60E91804)
-F (..\BSP\Encoder.c)(0x643A21A6)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../BSP-I.\RTE\_ROS_Robot-ID:\Tool\MDK\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\Tool\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ros_robot\encoder.o --omf_browse ros_robot\encoder.crf --depend ros_robot\encoder.d)
-I (..\BSP\Encoder.h)(0x643A21A6)
+F (..\BSP\Encoder.c)(0x643EBE45)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../BSP-I.\RTE\_ROS_Robot-ID:\Tool\MDK\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\Tool\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ros_robot\encoder.o --omf_browse ros_robot\encoder.crf --depend ros_robot\encoder.d)
+I (..\BSP\Encoder.h)(0x643EBE45)
 I (../Core/Inc/main.h)(0x64391AC8)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x60E91804)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x643ACEF4)
@@ -722,7 +727,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x60E91804)
 I (../Core/Inc/tim.h)(0x64391AC7)
 I (D:\Tool\MDK\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
-F (..\BSP\Encoder.h)(0x643A21A6)()
+F (..\BSP\Encoder.h)(0x643EBE45)()
 F (..\BSP\Key.c)(0x63C91E6A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../BSP-I.\RTE\_ROS_Robot-ID:\Tool\MDK\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\Tool\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ros_robot\key.o --omf_browse ros_robot\key.crf --depend ros_robot\key.d)
 I (..\BSP\Key.h)(0x63C91D50)
 I (../Core/Inc/main.h)(0x64391AC8)
@@ -859,9 +864,15 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x60E91804)
 I (D:\Tool\MDK\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (../Core/Inc/tim.h)(0x64391AC7)
+<<<<<<< Updated upstream
 F (..\BSP\Servo.h)(0x643B8A13)()
 F (.\pid.c)(0x643D4C6A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../BSP-I.\RTE\_ROS_Robot-ID:\Tool\MDK\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\Tool\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ros_robot\pid.o --omf_browse ros_robot\pid.crf --depend ros_robot\pid.d)
 I (pid.h)(0x643D4C6A)
+=======
+F (..\BSP\Servo.h)(0x643E4797)()
+F (.\pid.c)(0x643E0E4D)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../BSP-I.\RTE\_ROS_Robot-ID:\Tool\MDK\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-ID:\Tool\MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ros_robot\pid.o --omf_browse ros_robot\pid.crf --depend ros_robot\pid.d)
+I (pid.h)(0x643EBE45)
+>>>>>>> Stashed changes
 I (../Core/Inc/main.h)(0x64391AC8)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x60E91804)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x643ACEF4)
@@ -891,4 +902,4 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x60E91804)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x60E91804)
-F (.\pid.h)(0x643D4C6A)()
+F (.\pid.h)(0x643EBE45)()
