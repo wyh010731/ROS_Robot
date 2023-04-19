@@ -41,15 +41,15 @@ void Motor_direction(uint8_t direction)
 {
     switch (direction) {
         case 1://正转
-            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_13,GPIO_PIN_SET);   //IN1
-            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_12,GPIO_PIN_RESET); //IN2
+            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_13,GPIO_PIN_RESET);   //IN1
+            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_12,GPIO_PIN_SET); //IN2
 
-            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,GPIO_PIN_RESET);   //IN3
-            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_15,GPIO_PIN_SET); //IN4
+            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,GPIO_PIN_SET);   //IN3
+            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_15,GPIO_PIN_RESET); //IN4
             break;
         case 2://反转
-            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_12,GPIO_PIN_RESET); //IN1
-            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_13,GPIO_PIN_SET);   //IN2
+            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_12,GPIO_PIN_SET); //IN1
+            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_13,GPIO_PIN_RESET);   //IN2
 
             HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,GPIO_PIN_RESET); //IN3
             HAL_GPIO_WritePin(GPIOB,GPIO_PIN_15,GPIO_PIN_SET);   //IN4

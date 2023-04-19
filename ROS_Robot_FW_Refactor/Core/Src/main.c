@@ -15,6 +15,28 @@
   *
   ******************************************************************************
   */
+  /*
+                           _ooOoo_
+                          o8888888o
+                          88" . "88
+                          (| -_- |)
+                          O\  =  /O
+                       ____/`---'\____
+                     .'  \\|     |//  `.
+                    /  \\|||  :  |||//  \
+                   /  _||||| -:- |||||-  \
+                   |   | \\\  -  /// |   |
+                   | \_|  ''\---/''  |   |
+                   \  .-\__  `-`  ___/-. /
+                 ___`. .'  /--.--\  `. . __
+              ."" '<  `.___\_<|>_/___.'  >'"".
+             | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+             \  \ `-.   \_ __\ /__ _/   .-` /  /
+        ======`-.____`-.___\_____/___.-`____.-'======
+                           `=---='
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                 佛祖保佑       永无BUG
+        */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
@@ -27,10 +49,12 @@
 /* USER CODE BEGIN Includes */
 #include "stdio.h"
 #include <string.h>
+#include <stdlib.h>
 #include "../BSP/Servo.h"
 #include "../BSP/Motor.h"
 #include "../BSP/Encoder.h"
 #include "../BSP/oled.h"
+#include "pid.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -65,6 +89,9 @@ uint8_t rx_index = 0;
 uint8_t frame_received = 0;
 /* 定义变量 */
 int linear_velocity = 0 , angular_velocity = 0 , lidar_distance = 0 ;
+
+int32_t count1 = 0;
+int32_t count2 = 0;
 
 /* USER CODE END PV */
 
@@ -122,7 +149,8 @@ int main(void)
   Motor_init();
   /* 编码器初始化 */
   Encoder_init();
-
+	/* PID初始化 */
+	pid_init(15,0,0);
 	HAL_UART_Receive_IT(&huart2, &rx_buffer[rx_index], 1);
   /* OLED初始化 */
   OLED_Init();
@@ -131,7 +159,6 @@ int main(void)
   OLED_ShowString(15,0,(uint8_t *)"Autopilot System",12,1);
   /* OLED屏幕刷新 */
   OLED_Refresh();
-	uint8_t a = 0;
 	HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_3);
   /* USER CODE END 2 */
 
@@ -139,8 +166,19 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		 my_main();
-     HAL_Delay(1);
+//		 my_main();
+//     HAL_Delay(1);
+		Motor_direction(1);
+		Motor_speed(100,100);
+		count1 = Read_Encoder(3); // 假设使用TIM2作为编码器输入
+		int rpm = Calculate_Motor_RPM(count1);
+
+    // 在此处添加控制电机转速的代码
+//    printf("encoder_value = %d,rmp = %d\r\n",count1,rpm);
+		   printf("%d,%d\n",count1,rpm);
+    
+    HAL_Delay(500);
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -189,6 +227,8 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 
+
+
 /* 自定义主函数 */
 void my_main()
 {
@@ -207,9 +247,9 @@ void my_main()
     /* 使能电机正转 */
     Motor_direction(1);
     /* 定义变量new_angle读取计算角度值 */
-    int new_angle = calculate_servo_angle(angular_velocity);
+    int new_angle = calculate_servo_pulse(angular_velocity);
     /* 设定舵机角度 */
-    set_servo_angle(new_angle);
+    set_servo_rotation(new_angle);
     /* code */
 //  }  
 }
@@ -280,6 +320,18 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
         }
     }
 }
+
+// void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+//   if (htim->Instance == TIM2) {
+//     count1 += (int32_t)__HAL_TIM_GET_COUNTER(&htim2);
+//     __HAL_TIM_SET_COUNTER(&htim2, 0);
+//     printf("Motor 1 count: %d\r\n", count1);
+//   } else if (htim->Instance == TIM3) {
+//     count2 += (int32_t)__HAL_TIM_GET_COUNTER(&htim3);
+//     __HAL_TIM_SET_COUNTER(&htim3, 0);
+//     printf("Motor 2 count: %d\r\n", count2);
+//   }
+// }
 
 /* printf重映像 */
 int fputc(int ch, FILE *f)
