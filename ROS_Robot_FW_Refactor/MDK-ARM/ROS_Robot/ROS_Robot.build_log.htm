@@ -22,21 +22,19 @@ Dialog DLL:      TCM.DLL V1.36.1.0
  
 <h2>Project:</h2>
 D:\ROS\ROS_Robot\ROS_Robot_FW_Refactor\MDK-ARM\ROS_Robot.uvprojx
-Project File Date:  04/17/2023
+Project File Date:  04/19/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Tool\MDK\ARM\ARMCC\Bin'
 Build target 'ROS_Robot'
-compiling pid.c...
-pid.c(5): warning:  #1-D: last line of file ends without a newline
-  #include "pid.h"
-pid.h(11): warning:  #1-D: last line of file ends without a newline
-  #endif //ROS_ROBOT_PID_H
-pid.c: 2 warnings, 0 errors
+compiling main.c...
+../Core/Src/main.c(164): warning:  #177-D: variable "pwm_value"  was declared but never referenced
+  	int pwm_value = 0;
+../Core/Src/main.c: 1 warning, 0 errors
 linking...
-Program Size: Code=10796 RO-data=6372 RW-data=44 ZI-data=2716  
+Program Size: Code=10720 RO-data=6372 RW-data=76 ZI-data=2716  
 FromELF: creating hex file...
-"ROS_Robot\ROS_Robot.axf" - 0 Error(s), 2 Warning(s).
+"ROS_Robot\ROS_Robot.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 

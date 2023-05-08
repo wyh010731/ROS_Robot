@@ -1,0 +1,14 @@
+<launch>
+
+  <!-- 开启RGB摄像头节点  在usb_cam功能包下找到usb_cam-test.launch文件并运行-->
+  <include file="$(find astra_camera)/launch/gemini.launch" />
+
+  <!-- 开启巡线节点  在opencv_line_follower功能包下找到OpenCV_ROS_LineFollow.py文件并运行，通过该文件创建的节点命名为OpenCVLineFollow-->
+  <node name='camera_pkg' pkg="camera_pkg" type="OpenCV_ROS_LineFollow.py">
+  
+</node>
+ 
+  <!-- 开启机器人底层相关节点  在turn_on_wheeltec_robot功能包下找到turn_on_wheeltec_robot.launch文件并运行-->
+ <!--<include file="$(find turn_on_wheeltec_robot)/launch/turn_on_wheeltec_robot.launch" />  -->
+  
+</launch>

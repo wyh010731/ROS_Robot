@@ -1,0 +1,18 @@
+<launch>
+  
+  <!-- 启动第一个roslaunch文件 -->
+  <include file="$(find astra_camera)/launch/gemini.launch">
+  </include>
+  
+  <!-- 启动第二个roslaunch文件 -->
+  <include file="$(find ldlidar_06)/launch/ld06.launch">
+  </include>
+
+  <!-- 启动节点1 -->
+  <node name="OpenCV_ROS_LineFollow" pkg="camera_pkg" type="OpenCV_ROS_LineFollow.py">
+  </node>
+  
+  <!-- 启动节点2 -->
+  <node name="stm32_serial" pkg="camera_pkg" type="stm32_serial.py" />
+
+</launch>

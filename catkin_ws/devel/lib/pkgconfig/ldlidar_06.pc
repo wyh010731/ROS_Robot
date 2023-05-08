@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/catkin_ws/devel
+
+Name: ldlidar_06
+Description: Description of ldlidar_06
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

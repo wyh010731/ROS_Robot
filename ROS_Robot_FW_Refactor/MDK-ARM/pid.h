@@ -6,6 +6,6 @@
 #define ROS_ROBOT_PID_H
 
 #include "main.h"
-
-
+void pid_init(float _Kp, float _Ki, float _Kd);
+float pid_compute(float _setpoint, float _feedback, float dt);
 #endif //ROS_ROBOT_PID_H

@@ -32,3 +32,4 @@ ros_robot\encoder.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 ros_robot\encoder.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 ros_robot\encoder.o: ../Core/Inc/tim.h
 ros_robot\encoder.o: D:\Tool\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+ros_robot\encoder.o: D:\Tool\MDK\ARM\ARMCC\Bin\..\include\stdlib.h

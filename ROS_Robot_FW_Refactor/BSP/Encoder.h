@@ -8,7 +8,10 @@
 #include "main.h"
 #include "tim.h"
 #include "stdio.h"
+#include <stdlib.h>
 
 void Encoder_init(void);
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim);
+int Read_Encoder(uint8_t TIMX);
+int Calculate_Motor_RPM(int motor_value);
+int Calculate_Motor_econder(int rpm);
 #endif //ROS_ROBOT_ENCODER_H

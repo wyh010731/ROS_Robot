@@ -158,6 +158,12 @@
           },
           {
             "path": "../BSP/Servo.h"
+          },
+          {
+            "path": "pid.c"
+          },
+          {
+            "path": "pid.h"
           }
         ],
         "folders": []
@@ -314,6 +320,7 @@
           "../Drivers/CMSIS/Device/ST/STM32F1xx/Include",
           "../Drivers/CMSIS/Include",
           "../BSP",
+          ".",
           "RTE/_ROS_Robot"
         ],
         "libList": [],
