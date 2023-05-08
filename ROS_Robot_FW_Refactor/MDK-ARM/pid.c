@@ -5,14 +5,15 @@
 #include "pid.h"
 
 // 声明PID控制器变量
-double Kp, Ki, Kd;  // PID增益
-double integral = 0, derivative = 0;  // 积分误差和导数误差
-double error, last_error;  // 误差和上一次误差
-double setpoint, feedback;  // 目标值和反馈值
-double output;  // PID输出
+float Kp, Ki, Kd;                   // PID增益
+float integral = 0, derivative = 0; // 积分误差和导数误差
+float error, last_error;            // 误差和上一次误差
+float setpoint, feedback;           // 目标值和反馈值
+float output;                       // PID输出
 
 // 初始化PID控制器
-void pid_init(double _Kp, double _Ki, double _Kd) {
+void pid_init(float _Kp, float _Ki, float _Kd)
+{
     Kp = _Kp;
     Ki = _Ki;
     Kd = _Kd;
@@ -22,7 +23,8 @@ void pid_init(double _Kp, double _Ki, double _Kd) {
 }
 
 // 计算PID输出
-double pid_compute(double _setpoint, double _feedback, double dt) {
+float pid_compute(float _setpoint, float _feedback, float dt)
+{
     setpoint = _setpoint;
     feedback = _feedback;
 

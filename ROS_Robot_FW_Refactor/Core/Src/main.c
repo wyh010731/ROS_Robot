@@ -150,7 +150,7 @@ int main(void)
   /* 编码器初始化 */
   Encoder_init();
 	/* PID初始化 */
-	pid_init(15,0,0);
+	pid_init(0.85,0.15,0.05);
 	HAL_UART_Receive_IT(&huart2, &rx_buffer[rx_index], 1);
   /* OLED初始化 */
   OLED_Init();
@@ -160,24 +160,29 @@ int main(void)
   /* OLED屏幕刷新 */
   OLED_Refresh();
 	HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_3);
+	//Motor_speed(155,155);
+	int pwm_value = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-//		 my_main();
-//     HAL_Delay(1);
-		Motor_direction(1);
-		Motor_speed(100,100);
-		count1 = Read_Encoder(3); // 假设使用TIM2作为编码器输入
-		int rpm = Calculate_Motor_RPM(count1);
-
-    // 在此处添加控制电机转速的代码
-//    printf("encoder_value = %d,rmp = %d\r\n",count1,rpm);
-		   printf("%d,%d\n",count1,rpm);
+		 my_main();
+     HAL_Delay(1);
+//		Motor_direction(1);		
+//		count1 = Read_Encoder(3); // 假设使用TIM2作为编码器输入
+//		int rpm = Calculate_Motor_RPM(count1);
+//		int output = pid_compute(50,rpm,0.8);
+//		int rpm_value = Calculate_Motor_econder(output);
+//		pwm_value = (rpm_value  * (999 + 1)) / 4000;		
+//		Motor_speed(pwm_value,pwm_value);
+//    // 在此处添加控制电机转速的代码	
+//		printf("%d,%d,%d,%d\n",50,rpm,output,pwm_value);
+//    //printf("encoder_value = %d,rmp = %d\r\n",count1,rpm);
+		
     
-    HAL_Delay(500);
+//    HAL_Delay(500);
 
     /* USER CODE END WHILE */
 
@@ -233,17 +238,18 @@ void SystemClock_Config(void)
 void my_main()
 {
 	/* 判断激光雷达距离，障碍物距离小于等于20cm时车辆立即停止 */
-//	if(lidar_distance <= 20){
-//    /* 设定停止PWM脉冲为0 */
-//		Motor_speed(0 , 0);
-//    /* 停止电机转动 */
-//		Motor_direction(3);
-//	}
+	if(lidar_distance <= 20){
+    /* 设定停止PWM脉冲为0 */
+		Motor_speed(0 , 0);
+    /* 停止电机转动 */
+		Motor_direction(3);
+	}
   /* 判断激光雷达距离，障碍物距离大于20cm时车辆前进 */
-//  else if (lidar_distance > 20)
-//  {
+  else if (lidar_distance > 20)
+  {
     /* 将串口解析出的v_l线速度传入电机 */
-    Motor_speed(linear_velocity , linear_velocity);
+//    Motor_speed(linear_velocity , linear_velocity);
+		Motor_speed(200 , 200);
     /* 使能电机正转 */
     Motor_direction(1);
     /* 定义变量new_angle读取计算角度值 */
@@ -251,7 +257,7 @@ void my_main()
     /* 设定舵机角度 */
     set_servo_rotation(new_angle);
     /* code */
-//  }  
+  }  
 }
 
 /* 串口回调函数解析数据 */
@@ -320,18 +326,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
         }
     }
 }
-
-// void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
-//   if (htim->Instance == TIM2) {
-//     count1 += (int32_t)__HAL_TIM_GET_COUNTER(&htim2);
-//     __HAL_TIM_SET_COUNTER(&htim2, 0);
-//     printf("Motor 1 count: %d\r\n", count1);
-//   } else if (htim->Instance == TIM3) {
-//     count2 += (int32_t)__HAL_TIM_GET_COUNTER(&htim3);
-//     __HAL_TIM_SET_COUNTER(&htim3, 0);
-//     printf("Motor 2 count: %d\r\n", count2);
-//   }
-// }
 
 /* printf重映像 */
 int fputc(int ch, FILE *f)

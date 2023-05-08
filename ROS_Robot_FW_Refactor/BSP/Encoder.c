@@ -31,9 +31,13 @@ int Read_Encoder(uint8_t TIMX)
 // 计算电机转速的函数
 int Calculate_Motor_RPM(int motor_value)
 {
-		
     // 计算电机转速（单位为RPM）
-    rpm = motor_value * 60 / (4 * 13 * 30); // 假设四倍频和减速比都是已知的
-		
+    rpm = motor_value * 60 / (4 * 13 * 30); // 假设四倍频和减速比都是已知的		
     return rpm;
 }
+int Calculate_Motor_econder(int rpm)
+{
+	int motor_encoder_fb_value = rpm * (4 * 13 * 30) / 60;
+	return motor_encoder_fb_value;
+}
+

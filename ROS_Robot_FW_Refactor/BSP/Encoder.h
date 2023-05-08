@@ -13,4 +13,5 @@
 void Encoder_init(void);
 int Read_Encoder(uint8_t TIMX);
 int Calculate_Motor_RPM(int motor_value);
+int Calculate_Motor_econder(int rpm);
 #endif //ROS_ROBOT_ENCODER_H
